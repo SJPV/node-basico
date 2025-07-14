@@ -1,14 +1,6 @@
-const http = require('http');
+// const { contenido } = require('./FS/ejemplo-fs-sync.js');
 
-const server = http.createServer((req, res) => {
+//require('./FS/ejemplo-fs-callbacks.js');
 
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.write('<h1>Hola Mundo</h1>');
-    res.end('FIN');
+require('./FS/ejemplo-fs-promesas.js');
 
-});
-
-server.listen(6666, () => {
-    console.log('Se inicializó el servidor en puerto 6666');
-})
