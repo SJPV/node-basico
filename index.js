@@ -19,7 +19,19 @@ app.listen(3000, () => {
 // -- 4. Path And OS
 //import {fnPath} from "./4.PathAndOS/path.js"
 //fnPath();
-import { fnOS } from "./4.PathAndOS/os.js";
-fnOS();
+//import { fnOS } from "./4.PathAndOS/os.js";
+//fnOS();
 
 
+// -- 5. EventEmitter
+//import { myEvent } from "./5.Events/events.js";
+//myEvent();
+
+import { MiProceso } from "./5.Events/miProceso.js";
+
+const miEvento = new MiProceso();
+
+miEvento.on("inicio", () => console.log("Inicio de mi Evento"));
+miEvento.on("fin", () => console.log("Fin de mi Evento"));
+
+miEvento.iniciar();
