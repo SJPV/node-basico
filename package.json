@@ -1,6 +1,7 @@
 {
   "name": "node-basico",
   "version": "1.0.0",
+  "type": "module",
   "description": "Introducción sobre node",
   "main": "index.js",
   "scripts": {
